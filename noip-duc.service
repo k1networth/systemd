@@ -1,0 +1,12 @@
+[Unit]
+Description=No-IP Dynamic Update Client
+After=network.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/noip-duc -g <my noip> --username "" --password ""
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

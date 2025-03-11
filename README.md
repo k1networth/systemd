@@ -6,7 +6,7 @@ wget --content-disposition https://www.noip.com/download/linux/latest
 tar xf noip-duc_*.tar.gz
 cd noip-duc_*/binaries
 sudo apt-get install ./noip-duc_*_amd64.deb
-rm noip-duc_3.3.0.tar.gz
+rm noip-duc_*.tar.gz
 sudo systemctl daemon-reload
 sudo systemctl start noip-duc
 sudo systemctl status noip-duc
